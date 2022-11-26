@@ -23,7 +23,11 @@ export default MyApp;
 // Reset rules inspired by :
 // https://www.joshwcomeau.com/css/custom-css-reset/
 // https://piccalil.li/blog/a-modern-css-reset/
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
+  :root {
+    --color-gray: 179, 179, 179
+  }
+
   body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
