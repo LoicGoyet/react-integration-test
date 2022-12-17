@@ -43,4 +43,6 @@ const StyledInput = styled.input`
   font-size: 1em;
   border-radius: 0.15rem;
   border: 1px solid rgb(var(--color-gray));
+  background-color: unset;
+  color: unset;
 `;

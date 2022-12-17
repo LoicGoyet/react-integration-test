@@ -9,6 +9,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  darkMode: {
+    current: 'dark',
+  },
 };
 
 export const decorators = [

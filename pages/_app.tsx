@@ -25,16 +25,23 @@ export default MyApp;
 // https://piccalil.li/blog/a-modern-css-reset/
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --color-gray: 179, 179, 179
+    --color-gray: 179, 179, 179;
+    --color-black: 47, 47, 47;
+    --color-white: 255, 255, 255;
   }
 
   body {
+    --background: rgb(var(--color-black));
+    --text-color: rgb(var(--color-white));
+
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     line-height: 1.5;
+    background-color: var(--background);
+    color: var(--text-color);
   }
 
   *,
